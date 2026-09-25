@@ -1,5 +1,3 @@
-# Student-Activity-System-Sheet-Final-
-
 def calculate_average(a1, a2, a3):
     total = a1 + a2 + a3
     average = total / 3
