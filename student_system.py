@@ -1,8 +1,12 @@
+# ITE 260 - P2 Checkpoint: Student Activity Score System
+
+# Function to calculate average score
 def calculate_average(a1, a2, a3):
     total = a1 + a2 + a3
     average = total / 3
     return round(average, 2)
 
+# Function to get status based on average
 def get_status(avg):
     if avg >= 90 and avg <= 100:
         return "Excellent"
@@ -13,6 +17,7 @@ def get_status(avg):
     else:
         return "Failed"
 
+# Main Program
 num_students = int(input("How many students? "))
 
 while num_students < 3:
@@ -22,14 +27,15 @@ while num_students < 3:
 for i in range(num_students):
     print("")
     print("--- Student", i + 1, "---")
+    
     name = input("Enter name: ")
     act1 = float(input("Activity 1: "))
     act2 = float(input("Activity 2: "))
     act3 = float(input("Activity 3: "))
-
+    
     avg_score = calculate_average(act1, act2, act3)
     status = get_status(avg_score)
-
+    
     print("")
     print("Name:", name)
     print("Activity 1:", act1)
